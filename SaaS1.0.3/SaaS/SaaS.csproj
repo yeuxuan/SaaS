@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE279B99-AC87-4563-A401-19A76EA583C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SaaS</RootNamespace>
+    <AssemblyName>SaaS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.6\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Core, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Core.1.5.4\lib\net46\EPPlus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.2.0.246, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.2.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.3\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.3\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.3\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.3\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cs\DBHELP.cs" />
+    <Compile Include="cs\ID.cs" />
+    <Compile Include="cs\info.cs" />
+    <Compile Include="cs\ValidCode.cs" />
+    <Compile Include="cs\WatermarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\WatermarkTextBox.Designer.cs">
+      <DependentUpon>WatermarkTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Add _parking_Space.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Add _parking_Space.designer.cs">
+      <DependentUpon>Add _parking_Space.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Building_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Building_add.designer.cs">
+      <DependentUpon>Building_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Charge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Charge.designer.cs">
+      <DependentUpon>Charge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Complain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Complain.designer.cs">
+      <DependentUpon>Complain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Complaint_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Complaint_Interface.designer.cs">
+      <DependentUpon>Complaint_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Owner_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Owner_Management.designer.cs">
+      <DependentUpon>Owner_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\adminadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\adminadd.Designer.cs">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Cs.Designer.cs">
+      <DependentUpon>Cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\forginpwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\forginpwd.Designer.cs">
+      <DependentUpon>forginpwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\function.Designer.cs">
+      <DependentUpon>function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\funcyion.cs" />
+    <Compile Include="windowns\Main1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Main1.Designer.cs">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Formadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Formadd.Designer.cs">
+      <DependentUpon>Formadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="windowns\Mian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Mian.Designer.cs">
+      <DependentUpon>Mian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Owner_User_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Owner_User_Interface.designer.cs">
+      <DependentUpon>Owner_User_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\pfsz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\pfsz.Designer.cs">
+      <DependentUpon>pfsz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\regenist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\regenist.Designer.cs">
+      <DependentUpon>regenist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Repairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Repairs.designer.cs">
+      <DependentUpon>Repairs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Staff_Management .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Staff_Management .designer.cs">
+      <DependentUpon>Staff_Management .cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\StopCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\StopCar.designer.cs">
+      <DependentUpon>StopCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Super_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Super_Admin.Designer.cs">
+      <DependentUpon>Super_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Truck_space.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Truck_space.designer.cs">
+      <DependentUpon>Truck_space.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\Update.designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="windowns\User_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="windowns\User_Control.designer.cs">
+      <DependentUpon>User_Control.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cs\WatermarkTextBox.resx">
+      <DependentUpon>WatermarkTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Add _parking_Space.resx">
+      <DependentUpon>Add _parking_Space.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Building_add.resx">
+      <DependentUpon>Building_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Charge.resx">
+      <DependentUpon>Charge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Complain.resx">
+      <DependentUpon>Complain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Complaint_Interface.resx">
+      <DependentUpon>Complaint_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Owner_Management.resx">
+      <DependentUpon>Owner_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\adminadd.resx">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Cs.resx">
+      <DependentUpon>Cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\forginpwd.resx">
+      <DependentUpon>forginpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\function.resx">
+      <DependentUpon>function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Main1.resx">
+      <DependentUpon>Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Formadd.resx">
+      <DependentUpon>Formadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="windowns\Mian.resx">
+      <DependentUpon>Mian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Owner_User_Interface.resx">
+      <DependentUpon>Owner_User_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\pfsz.resx">
+      <DependentUpon>pfsz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\regenist.resx">
+      <DependentUpon>regenist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Repairs.resx">
+      <DependentUpon>Repairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Staff_Management .resx">
+      <DependentUpon>Staff_Management .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\StopCar.resx">
+      <DependentUpon>StopCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Super_Admin.resx">
+      <DependentUpon>Super_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Truck_space.resx">
+      <DependentUpon>Truck_space.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="windowns\User_Control.resx">
+      <DependentUpon>User_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ef4c93437737f0 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ef4c93437737f01 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7s1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26bb5b3086ed7da86e - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26bb5b3086ed7da86e1 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74f90c3bc43403fee6d2657ef861e039 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01773 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123456 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_256px_510501easyicon.net - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h5 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_密码 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_密码1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_验证码 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_验证码1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_验证码2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_验证码11 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_用户 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_用户1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_用户11 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l7 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l10 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\财务1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询的2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车位管理 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车位管理1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\车位管理2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刚刚 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列表刷新 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列表刷新1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列表刷新2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\密码图标 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置9 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置10 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置11 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置12 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\身份 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费_1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费_11 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\收费管1理 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\投诉 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\投诉1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出1登录 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出2 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出3 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出登1录 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出登录 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\忘记密码 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\忘记密码1 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\忘记密码1%281%29 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\忘记密码4 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\忘记密码5 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\小化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\选择 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\选择1 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\业主 - 副本.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用1户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户管理11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户图标.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\用户图标1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\注册账号V0.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uugai.com_1620301925310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uugai.com_16203019253101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出3 - 副本1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\组 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\组 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\组 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\维修1.png" />
+    <None Include="Resources\维修11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

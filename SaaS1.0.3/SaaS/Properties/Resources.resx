@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="列表刷新1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\列表刷新1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="注册账号V0.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\注册账号V0.1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5ef4c93437737f01 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5ef4c93437737f01 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_验证码1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_验证码1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="密码图标 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\密码图标 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-2 - 副本1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="组 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\组 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_用户1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_用户1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="注册账号V01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\注册账号V0.1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="列表刷新2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\列表刷新2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="忘记密码4 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\忘记密码4 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="查询的2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\查询的2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="l10 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\l10 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="26bb5b3086ed7da86e - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26bb5b3086ed7da86e - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="123456 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\123456 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车位管理 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车位管理 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出2 - 副本1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="列表刷新 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\列表刷新 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="h5 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\h5 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_用户 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_用户 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_密码 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_密码 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uugai1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uugai.com_16203019253101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="投诉1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\投诉1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置10 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置10 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="l7 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\l7 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出登录 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出登录 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="favicon - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicon - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="01773 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01773 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车位管理1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车位管理1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="刚刚 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\刚刚 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="财务1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\财务1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="忘记密码1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\忘记密码1 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="74f90c3bc43403fee6d2657ef861e039 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\74f90c3bc43403fee6d2657ef861e039 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="关闭 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\关闭 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小化" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小化.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5ef4c93437737f0 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5ef4c93437737f0 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出3 - 副本1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出3 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="组 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\组 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="26bb5b3086ed7da86e1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\26bb5b3086ed7da86e1 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="未标题-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\未标题-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="组 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\组 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用户图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\用户图标.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出3 - 副本11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出3 - 副本1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_验证码 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_验证码 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出1登录 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出1登录 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="忘记密码 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\忘记密码 - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置11 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置11 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出登1录 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出登1录 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="退出3 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\退出3 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin_256px_510501easyicon.net - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin_256px_510501easyicon.net - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="选择 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\选择 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="业主 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\业主 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="身份 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\身份 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="忘记密码1(1) - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\忘记密码1(1) - 副本.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="忘记密码5 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\忘记密码5 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="投诉 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\投诉 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="选择1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\选择1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用户管理11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\用户管理11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置12 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置12 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uugai.com_1620301925310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uugai.com_1620301925310.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="未标题-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\未标题-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费管1理 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费管1理 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7s1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7s1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_用户11 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_用户11 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费_11 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费_11 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用1户" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\用1户.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="未标题2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\未标题2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_验证码11 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_验证码11 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="收费_1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\收费_1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用户图标1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\用户图标1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="设置9 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\设置9 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_验证码2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_验证码2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车位管理2 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车位管理2 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="45611" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_密码1 - 副本" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_密码1 - 副本.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="维修1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\维修11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
